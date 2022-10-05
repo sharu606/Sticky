@@ -12,8 +12,8 @@ function Home() {
 
   function changeTheme(t) {
     if (t == "spring") {
-      document.body.style.setProperty("--orange", "#F4BFBF");
-      document.body.style.setProperty("--red", "#FFD9C0");
+      document.body.style.setProperty("--orange", "#fab5b5");
+      document.body.style.setProperty("--red", "#fac098");
       document.body.style.setProperty("--green", "#8CC0DE");
       document.body.style.setProperty("--peach", "#c6f1d6");
       setTheme("spring");
