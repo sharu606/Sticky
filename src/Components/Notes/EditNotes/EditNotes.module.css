@@ -1,0 +1,88 @@
+.modal {
+  background-color: var(--orange);
+  border-radius: 0.3rem;
+  height: 70vh;
+}
+
+.inputBox {
+  background: transparent;
+  border: none;
+  width: 90%;
+  color: var(--font);
+}
+
+.inputBox:focus {
+  outline: none;
+}
+
+.inputBox::placeholder {
+  color: var(--font);
+}
+
+.title::placeholder {
+  font-size: 1.2rem;
+}
+
+.notes {
+  resize: none;
+  height: 70%;
+}
+
+.notes::-webkit-scrollbar {
+  height: 16px;
+  overflow: visible;
+  width: 16px;
+}
+
+.notes::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+.notes::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.notes::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 23px;
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 1px 1px 1px 6px;
+  min-height: 28px;
+  padding: 100px 0 0;
+  -webkit-box-shadow: inset 1px 1px 0 rgb(0 0 0 / 10%),
+    inset 0 -1px 0 rgb(0 0 0 / 7%);
+  box-shadow: inset 1px 1px 0 rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(0 0 0 / 7%);
+}
+
+.notes::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 0 0 0 4px;
+}
+
+.small {
+  background-color: var(--font);
+  color: var(--orange);
+  width: 120px;
+  height: 40px;
+}
+
+.rightAlign {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-height: 820px) {
+  .notes {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-height: 630px) {
+  .notes {
+    height: 50%;
+  }
+}

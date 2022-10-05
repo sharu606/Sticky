@@ -1,0 +1,18 @@
+.button {
+  background-color: var(--font);
+  color: var(--orange);
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  filter: brightness(96%);
+}
+
+.button:focus {
+  outline: none;
+  border: none;
+}

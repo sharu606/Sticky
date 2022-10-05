@@ -1,0 +1,63 @@
+.noteDiv {
+  color: var(--font);
+  width: 300px;
+  height: 240px;
+  background-color: var(--orange);
+  margin-top: 10px;
+  text-align: left;
+  border-radius: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 0.4s;
+}
+
+.noteDiv:hover {
+  filter: brightness(95%);
+  cursor: pointer;
+}
+
+.noteDiv:hover .pinIcon {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pinIcon {
+  position: absolute;
+  right: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.pinFillIcon {
+  position: absolute;
+  right: 10px;
+}
+
+.title,
+.tagline,
+.note {
+  word-wrap: break-word;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.tagline {
+  font-size: 1rem;
+}
+
+.note {
+  white-space: pre-line;
+  font-size: 0.93rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+}

@@ -1,0 +1,9 @@
+.notes {
+    background-color: var(--bg);
+    min-height: 97vh;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 23px;
+    height: fit-content;
+}

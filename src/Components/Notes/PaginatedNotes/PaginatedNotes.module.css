@@ -1,0 +1,73 @@
+.notesList {
+  min-height: 70vh;
+  height: fit-content;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    column-count: 1;
+  }
+}
+
+.circle {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  color: var(--font);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 92%;
+  overflow: hidden;
+}
+
+.page {
+  background-color: var(--orange);
+}
+
+.active {
+  background-color: var(--red);
+}
+
+.next {
+  background-color: var(--green);
+}

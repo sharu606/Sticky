@@ -1,0 +1,42 @@
+.nav {
+  border: 1px solid #ccc;
+}
+
+.logo {
+  height: 25px;
+  margin: 2px;
+}
+
+.theme {
+  color: var(--font);
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  transition-duration: 0.3s;
+}
+
+.autumn {
+  background-color: #ecb390;
+}
+
+.spring {
+  background-color: #f4bfbf;
+}
+
+.night {
+  background-color: #222222;
+}
+
+.theme:hover {
+  filter: brightness(96%);
+}
+
+.theme:focus {
+  outline: none;
+  border: none;
+}
+
+.wrap {
+  background-color: var(--peach);
+}
